@@ -1,20 +1,9 @@
 # Sentiment Analysis Model
-This repository contains the Jupyter notebook and the web app html file for my Udacity's Deep Learning Nanodegree project.
+This repository contains the Jupyter notebook, Python scripts for training and inference, and the web app html file for my Udacity's Deep Learning Nanodegree project.
 
 Description:
-A recurent neural network is trained to generate TV scripts in the style of dialogue from Seinfeld.
+A recurent neural network is trained to determine the sentiment of a movie review using the IMDB data set. The model is built and deployed using the AWS's SageMaker service.
 
-## Dependencies
+More specific, the RNN is implemented and trained using SageMaker's supported PyTorch functionality, then the model is deployed using the Lambda / API Gateway integration.
 
-The project requires PyTorch and torchvision in order to run. The prerequisites are easier installed using conda:
-
-`conda create -n scripts python=3`
-
-`conda activate scripts`
-
-`conda install pytorch torchvision -c pytorch`
-
-
-### pip
-
-To install torchvision with pip, you can issue `pip install torchvision`.
+All the work is done using Amazon's SageMaker platform.
